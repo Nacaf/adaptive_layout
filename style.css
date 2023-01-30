@@ -33,13 +33,13 @@
   /*----------Section 1------------*/
 
   .header_1 {
-    width: 350px;
+    min-width: 350px;
     margin: 8px 0 0 35px;
     font-size: 40px;
   }
 
   .paragraph_1 {
-    max-width: 290px;
+    width:60%;
     font-size: 10px;
     margin: 35px 0 0 35px;
   }
@@ -60,9 +60,9 @@
   }
 
   .quote_container {
-    font-size: 12px;
+    font-size: 0.8rem;
     background-color: #1e4681;
-    width: 260px;
+    min-width: 260px;
     height: 110px;
     color: #ffffff;
     margin: 40px 0 0 35px;
@@ -77,6 +77,7 @@
   .author_quote {
     padding-left: 125px;
     font-size: 10px;
+    min-width: 130px;
   }
 
   /*---------Section 2----------*/
@@ -86,11 +87,11 @@
   .section_4,
   .section_5 {
     margin: 40px 0 0 35px;
-    width: 340px;
   }
 
   .section_2 p {
     font-size: 12px;
+    width: 90%;
   }
 
   .container_1 p,
@@ -101,16 +102,15 @@
   }
 
   .film_director_2 {
+    width: 146px;
     position: relative;
     left: 80px;
     z-index: 2;
   }
 
   .film_director_2_shadow {
-    position: relative;
-    top: 12px;
-    right: 80px;
-    width: 170px;
+    width: 200px;
+    margin: 0 0 -10px -95px;
   }
 
   .section_2_footer {
@@ -125,20 +125,22 @@
   .container_1,
   .container_2,
   .container_3 {
-    max-width: 35%;
+    max-width: 40vw;
   }
 
   /*----------Section 3------------*/
+
   .section_3 h5 {
     color: #1e4681;
   }
 
   .section_3_container {
-    max-width: 60%;
+    min-width: 310px;
   }
 
   /*----------Section 4----------*/
   .section_4 ul {
+    min-width: 300px;
     font-size: 12px;
     margin-left: -23px;
   }
@@ -146,13 +148,12 @@
   /*-----------Section 5----------*/
   .main_box {
     display: flex;
-    align-items: center;
-    flex-direction: column;
     row-gap: 25px;
+    flex-wrap: wrap;
   }
 
   .box_1 {
-    width: 186px;
+    min-width: 186px;
     height: 153px;
     background: #ffffff;
     border-radius: 14px;
@@ -176,63 +177,63 @@
   /*-----------Section 6----------*/
 
   .section_6 {
-    width: 376px;
     height: 423px;
     background: #efefef;
     margin-top: 60px;
   }
 
   .section_6_header {
-    width: 70%;
+    margin-left: 50px;
+    padding-top: 30px;
+    margin-bottom: 30px;
     font-size: 26px;
-    position: relative;
-    top: 42px;
-    left: 36px;
+    width: 250px;
+    min-width: 50%;
   }
 
   .section_6_container {
-    position: absolute;
-    width: 310px;
-    height: 250px;
+    display: flex;
+    flex-direction: column;
+    min-width: 60%;
+    border: 1px solid rgb(255, 255, 255);
     background-color: #ffffff;
-    box-shadow: 0.5px 0.5px 9px rgba(0, 0, 0, 0.25);
+    box-shadow: 0.5px 0.5px 9.3px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
-    margin: 70px 0 0 35px;
+    width: 280px;
+    height: 240px;
+    margin-left: 10px;
   }
   .section_6_container p {
-    position: relative;
-    top: 20px;
-    font-size: 10px;
+    padding: 10px 0 0 20px;
     width: 266px;
-    height: 112px;
-    line-height: 150%;
-    margin: 0 0 0 25px;
+    height: 111.01px;
+    left: 56px;
+    font-weight: 400;
+    font-size: 10px;
+    min-width: 80%;
   }
 
   .section_6_container img {
-    position: relative;
-    left: 20px;
-    top: 50px;
+    width: 95px;
+    height: 90px;
+    margin-left: 10px;
   }
   .section_6_container .facebook_logo {
-    position: relative;
-    left: 35px;
-    top: 30px;
+    width: 17px;
+    height: 17px;
+    margin: -30px 0 0 120px;
   }
 
   .section_6_container h4 {
-    position: absolute;
-    top: 150px;
-    left: 117px;
+    margin: -65px 0 0 120px;
   }
 
   /*-----------Section 7-----------*/
 
   .section_7 {
     background-color: #9dc9c8;
-    height: 365px;
-    width: 376px;
-    position: absolute;
+    height: 395px;
+    margin-top: -20px;
   }
   .section_7_header {
     padding: 40px 0 0 45px;
@@ -245,15 +246,15 @@
 
   .section_7_paragraph_2 {
     font-size: 37px;
-    position: absolute;
+    position: relative;
     left: 45px;
-    top: 135px;
+    top: -25px;
   }
 
   .section_7_inner_container {
     display: flex;
-    width: 300px;
-    padding: 40px 0 0 45px;
+    margin: -30px 0 0 45px;
+    column-gap: 30px;
   }
 
   .inner_container_1_paragraph_1,
@@ -270,9 +271,7 @@
 
   footer {
     background-color: #000000;
-    width: 376px;
     height: 250px;
-    margin-top: 365px;
   }
 
   .footer_logo {
@@ -342,9 +341,9 @@
   }
 
   .paragraph_1 {
-    max-width: 290px;
     font-size: 12px;
     margin: 35px 0 0 70px;
+    width: 30%;
   }
 
   .film_director_1 {
@@ -367,6 +366,7 @@
     font-size: 14px;
     background-color: #1e4681;
     width: 280px;
+    min-width: 30%;
     height: 115px;
     color: #ffffff;
     margin: -100px 0 0 270px;
@@ -390,7 +390,6 @@
   .section_4,
   .section_5 {
     margin: 80px 0 0 70px;
-    width: 834px;
   }
 
   .section_2 p,
@@ -399,7 +398,7 @@
   }
 
   .section_2 p {
-    max-width: 360px;
+    width: 30%;
   }
 
   .container_1 p,
@@ -419,9 +418,9 @@
   }
 
   .film_director_2_shadow {
-    position: relative;
-    bottom: 95px;
-    left: 470px;
+    position: absolute;
+    top: 960px;
+    left: 540px;
     width: 220px;
   }
 
@@ -434,6 +433,7 @@
   .section_2_footer {
     display: flex;
     line-height: 10px;
+    flex-wrap: wrap;
   }
 
   .container_1,
@@ -441,6 +441,7 @@
   .container_3 {
     max-width: 100px;
     padding-right: 50px;
+    width: 60%;
   }
 
   /*----------Section 3------------*/
@@ -464,7 +465,7 @@
   .section_4 ul {
     font-size: 14px;
     margin-left: -23px;
-    max-width: 370px;
+    width: 370px;
   }
 
   /*-----------Section 5----------*/
@@ -507,63 +508,54 @@
   /*-----------Section 6----------*/
 
   .section_6 {
-    width: 834px;
     height: 450px;
     background: #efefef;
     margin-top: 60px;
   }
 
   .section_6_header {
-    font-size: 32px;
-    position: relative;
-    top: 42px;
-    left: 70px;
+    padding: 40px 0 0 70px;
   }
 
   .section_6_container {
-    position: absolute;
-    width: 460px;
-    height: 260px;
+    border: 1px solid rgb(255, 255, 255);
     background-color: #ffffff;
-    box-shadow: 0.5px 0.5px 9px rgba(0, 0, 0, 0.25);
-    border-radius: 14px;
-    margin: 60px 0 0 70px;
+    box-shadow: 0.5px 0.5px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+    width: 458px;
+    height: 261px;
+    margin-left: 70px;
+    min-width: 60%;
   }
   .section_6_container p {
-    position: relative;
-    top: 20px;
+    padding-left: 25px;
+    padding-top: 10px;
+    width: 400px;
     font-size: 12px;
-    width: 440px;
-    height: 112px;
-    line-height: 150%;
-    margin: 0 0 0 25px;
+    min-width: 85%;
   }
 
   .section_6_container img {
-    position: relative;
-    left: 20px;
-    top: 40px;
+    width: 110px;
+    height: 97px;
+    padding: 20px 0 0 20px;
   }
   .section_6_container .facebook_logo {
-    position: relative;
-    left: 56px;
-    top: 30px;
+    margin-left: 0 0 0 10px;
+    width: 18px;
+    height: 18px;
   }
 
   .section_6_container h4 {
-    position: absolute;
-    top: 150px;
-    left: 140px;
-    font-size: 17px;
+    margin: -80px 0 0 155px;
   }
 
   /*-----------Section 7-----------*/
 
   .section_7 {
+    margin-top: -30px;
     background-color: #9dc9c8;
     height: 450px;
-    width: 834px;
-    position: absolute;
   }
   .section_7_header {
     padding: 40px 0 0 45px;
@@ -576,16 +568,15 @@
 
   .section_7_paragraph_2 {
     font-size: 46px;
-    position: absolute;
-    left: 45px;
-    top: 125px;
+    margin-left: 45px;
   }
 
   .section_7_inner_container {
     display: flex;
     width: 340px;
-    padding: 60px 0px 0 45px;
-    column-gap: 5px;
+    padding: 10px 0px 0 45px;
+    column-gap: 30px;
+    min-width: 50%;
   }
 
   .inner_container_1_paragraph_1,
@@ -602,9 +593,8 @@
 
   footer {
     background-color: #000000;
-    width: 834px;
     height: 230px;
-    margin-top: 450px;
+    margin-top: 1px;
   }
 
   .footer_logo {
@@ -864,34 +854,35 @@
 
   .section_6 {
     height: 780px;
-    background: #efefef;
-    margin-top: 60px;
+    min-width: 1280px;
+    margin-top: 50px;
+    background-color: #EFEFEF;
   }
 
   .section_6_header {
+    padding-top: 70px;
+    padding-left: 120px;
     font-size: 55px;
-    position: relative;
-    top: 90px;
-    left: 120px;
   }
 
   .section_6_container {
-    position: absolute;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
     width: 790px;
     height: 450px;
-    background-color: #ffffff;
-    box-shadow: 0.5px 0.5px 9px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    margin: 100px 0 0 115px;
+    margin-left: 120px;
+    min-width: 50%;
   }
   .section_6_container p {
-    position: relative;
-    top: 20px;
-    font-size: 20px;
     width: 700px;
-    height: 200px;
-    line-height: 150%;
-    margin: 35px 0 45px 46px;
+    height: 203px;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+    margin-bottom: -20px;
+    min-width: 85%;
   }
 
   .section_6_container img {
@@ -910,18 +901,18 @@
   }
 
   .section_6_container h4 {
-    position: absolute;
-    top: 250px;
-    left: 259px;
-    font-size: 30px;
+    margin-left: 260px;
+    margin-top: -150px;
   }
 
   /*-----------Section 7-----------*/
 
   .section_7 {
-    background-color: #9dc9c8;
+    display: flex;
+    background-color: #9DC9C8;
     height: 780px;
-    margin-top: -46px;
+    flex-direction: column;
+    
   }
   .section_7_header {
     padding: 120px 0 0 120px;
@@ -943,6 +934,7 @@
     width: 660px;
     padding: 100px 0px 0 120px;
     column-gap: 45px;
+    min-width: 50%;
   }
 
   .inner_container_1_paragraph_1,
